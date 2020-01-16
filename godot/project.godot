@@ -1,0 +1,83 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "MeshInstance",
+"class": "DisplayedItem",
+"language": "GDScript",
+"path": "res://scripts/DisplayedItem.gd"
+}, {
+"base": "DisplayedItem",
+"class": "DynaColorCube",
+"language": "GDScript",
+"path": "res://scripts/DynaColorCube.gd"
+}, {
+"base": "DisplayedItem",
+"class": "DynaQuad",
+"language": "GDScript",
+"path": "res://scripts/DynaQuad.gd"
+}, {
+"base": "DisplayedItem",
+"class": "DynaRippleSurface",
+"language": "GDScript",
+"path": "res://scripts/DynaRippleSurface.gd"
+}, {
+"base": "DisplayedItem",
+"class": "DynaTexCube",
+"language": "GDScript",
+"path": "res://scripts/DynaTexCube.gd"
+}, {
+"base": "DisplayedItem",
+"class": "DynaTexHardNormalCube",
+"language": "GDScript",
+"path": "res://scripts/DynaTexHardNormalCube.gd"
+}, {
+"base": "DisplayedItem",
+"class": "DynaTexNormalCube",
+"language": "GDScript",
+"path": "res://scripts/DynaTexNormalCube.gd"
+}, {
+"base": "DisplayedItem",
+"class": "DynaTexQuad",
+"language": "GDScript",
+"path": "res://scripts/DynaTexQuad.gd"
+}, {
+"base": "DisplayedItem",
+"class": "DynaWaveSurface",
+"language": "GDScript",
+"path": "res://scripts/DynaWaveSurface.gd"
+} ]
+_global_script_class_icons={
+"DisplayedItem": "",
+"DynaColorCube": "",
+"DynaQuad": "",
+"DynaRippleSurface": "",
+"DynaTexCube": "",
+"DynaTexHardNormalCube": "",
+"DynaTexNormalCube": "",
+"DynaTexQuad": "",
+"DynaWaveSurface": ""
+}
+
+[application]
+
+config/name="dyna_mesh"
+run/main_scene="res://scenes/main.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+
+[rendering]
+
+environment/default_clear_color=Color( 0.156863, 0.156863, 0.313726, 1 )
+environment/default_environment="res://default_env.tres"
